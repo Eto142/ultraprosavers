@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html class="no-js" lang="en">
 
     
@@ -53,6 +53,15 @@
         <script src='templates/bank-pro/js/vendor/smartbanner.js' async defer></script>
         <!-- End SmartBanner configuration -->
         <!-- Typekit fonts -->
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+        <!-- Remix Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- Inner Pages Stylesheet -->
+        <link rel="stylesheet" href="{{ asset('css/modern-homepage.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/inner-pages.css') }}">
         <link rel="stylesheet" href="templates/bank-pro/use.typekit.net/ehc6rvq.css">
         <link rel="stylesheet" href="templates/bank-pro/css/main0338.css" <!-- Refer Live Referrer Registration
             Resources-->
@@ -223,282 +232,26 @@ Church Street, George Town, Cayman Island.",
                         <nav id="nav-personal" class="nav-primary js-nav-primary js-nav-personal is-active" data-toggler=".is-active" aria-label="Personal Banking Navigation">
                         <ul class="nav-primary__l1 l-contain">
                             <li class="nav-primary__l1-item">
-                                    <a href="/" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class='nav-primary__l1-item-link-text'>Home</span></a>
-                                    </li>
-                                <li class="nav-primary__l1-item">
-                                    <a href="bank.html" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class='nav-primary__l1-item-link-text'>Bank</span></a>
-
-                                    <ul class="nav-primary__flyout js-nav-primary-flyout">
-                                        <li class="l-contain u-cf">
-                                            <div class="nav-primary__flyout-nav">
-                                                <div class="nav-primary__flyout-nav-title h4 l-mb-1">Bank</div>
-                                                <ul class="nav-primary__l2">
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="#" class="nav-primary__l2-item-link js-header-login-toggle" data-open="header-login">ultraprosavers Accounts</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="credit-cards.html" class="nav-primary__l2-item-link">Credit Cards</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="bank.html" class="nav-primary__l2-item-link">Online &amp; Mobile Banking</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="about-us.html" class="nav-primary__l2-item-link">Why Bank with ultraprosavers?</a>
-                                                        </li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="nav-primary__flyout-feature">
-                                                    
-                                                    <span class="nav-primary__flyout-feature-title h4 u-block" id="feature-title-0">Get rewards on Us</span>
-                                                    <div class="nav-primary__flyout-feature-desc l-mb-1">
-                                                        <div class="rtf rtf--compact">
-                                                            <p>For a limited time, get a reward when you bank with us! Additional terms apply.</p>
-                                                        </div>
-                                                    </div>
-                                                                <a href="checking-accounts" class="nav-primary__flyout-feature-cta" aria-labelledby="feature-title-0">Learn More</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-primary__l1-item">
-                                    <a href="save.html" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class='nav-primary__l1-item-link-text'>Save</span></a>
-
-                                    <ul class="nav-primary__flyout js-nav-primary-flyout">
-                                        <li class="l-contain u-cf">
-                                            <div class="nav-primary__flyout-nav">
-                                                <div class="nav-primary__flyout-nav-title h4 l-mb-1">Save</div>
-                                                <ul class="nav-primary__l2">
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="save.html#HighYielSavings" class="nav-primary__l2-item-link">ultraprosavers High Yield Savings</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="save.html#StarSavings" class="nav-primary__l2-item-link">ultraprosavers Star Savings</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="save.html#Certificates" class="nav-primary__l2-item-link">ultraprosavers Certificates</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="save.html#HolidayClub" class="nav-primary__l2-item-link">ultraprosavers Holiday Club &amp; Auxiliary Savings</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="save.html#KidsClub" class="nav-primary__l2-item-link">ultraprosavers Kids Club</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="save.html#MoneyMarket" class="nav-primary__l2-item-link">ultraprosavers Money Market</a>
-                                                        </li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="nav-primary__flyout-feature">
-                                                    
-                                                    <span class="nav-primary__flyout-feature-title h4 u-block" id="feature-title-1">ultraprosavers Certificates </span>
-                                                    <div class="nav-primary__flyout-feature-desc l-mb-1">
-                                                        <div class="rtf rtf--compact">
-                                                            <p>Build your savings with a low-risk, fixed rate.* Additional terms apply.</p>
-                                                        </div>
-                                                    </div>
-                                                                <a href="save.html#Certificates" class="nav-primary__flyout-feature-cta" aria-labelledby="feature-title-1">Learn More</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-primary__l1-item">
-                                    <a href="borrow.html" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class='nav-primary__l1-item-link-text'>Borrow</span></a>
-
-                                    <ul class="nav-primary__flyout js-nav-primary-flyout">
-                                        <li class="l-contain u-cf">
-                                            <div class="nav-primary__flyout-nav">
-                                                <div class="nav-primary__flyout-nav-title h4 l-mb-1">Borrow</div>
-                                                <ul class="nav-primary__l2">
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="borrow.html#creditcard" class="nav-primary__l2-item-link">ultraprosavers Credit Cards</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="borrow.html#mortgage" class="nav-primary__l2-item-link">ultraprosavers Mortgage and Home Loan Center</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="borrow.html#personal" class="nav-primary__l2-item-link">ultraprosavers Personal Loans</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="borrow.html#auto" class="nav-primary__l2-item-link">ultraprosavers Auto &amp; Motorcycle Loans</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="borrow.html#refinance" class="nav-primary__l2-item-link">ultraprosavers Auto Refinance</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="borrow.html#student" class="nav-primary__l2-item-link">ultraprosavers Student Loans</a>
-                                                        </li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="nav-primary__flyout-feature">
-                                                    <span class="nav-primary__flyout-feature-title h4 u-block" id="feature-title-2">0% Intro APR* for 15 Months </span>
-                                                    <div class="nav-primary__flyout-feature-desc l-mb-1">
-                                                        <div class="rtf rtf--compact">
-                                                            <p>Pay no interest until 2027 on all purchases with a new credit card from ultraprosavers.</p>
-                                                        </div>
-                                                    </div>
-                                                                <a href="borrow.html#creditcard" class="nav-primary__flyout-feature-cta" aria-labelledby="feature-title-2">Learn More</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-primary__l1-item">
-                                    <a href="invest.html" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class='nav-primary__l1-item-link-text'>Wealth &amp; Retire</span></a>
-
-                                    <ul class="nav-primary__flyout js-nav-primary-flyout">
-                                        <li class="l-contain u-cf">
-                                            <div class="nav-primary__flyout-nav">
-                                                <div class="nav-primary__flyout-nav-title h4 l-mb-1">Wealth &amp; Retire</div>
-                                                <ul class="nav-primary__l2">
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="invest.html#investmentTeam" class="nav-primary__l2-item-link">Our Investment Team</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="invest.html#retirement" class="nav-primary__l2-item-link">Retirement Planning</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="invest/index.html#financial" class="nav-primary__l2-item-link">Financial Planning</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="invest/index.html#estate" class="nav-primary__l2-item-link">Estate Planning &amp; Wealth Transfer</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="invest/index.html#ira" class="nav-primary__l2-item-link">IRA Rollover Assistance</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="invest/index.html#online" class="nav-primary__l2-item-link">Online Investing &amp; Brokerage</a>
-                                                        </li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="nav-primary__flyout-feature">
-                                                    <span class="nav-primary__flyout-feature-title h4 u-block" id="feature-title-3">Partner With Our CFS Advisors</span>
-                                                    <div class="nav-primary__flyout-feature-desc l-mb-1">
-                                                        <div class="rtf rtf--compact">
-                                                            <p>Build strength for tomorrow. Schedule your complimentary consultation today. </p>
-                                                        </div>
-                                                    </div>
-                                                                <a href="invest.html" class="nav-primary__flyout-feature-cta" aria-labelledby="feature-title-3">Get Started</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-primary__l1-item">
-                                    <a href="insure.html" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class='nav-primary__l1-item-link-text'>Insure</span></a>
-
-                                    <ul class="nav-primary__flyout js-nav-primary-flyout">
-                                        <li class="l-contain u-cf">
-                                            <div class="nav-primary__flyout-nav">
-                                                <div class="nav-primary__flyout-nav-title h4 l-mb-1">Insure</div>
-                                                <ul class="nav-primary__l2">
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="insure/index.html#medicare" class="nav-primary__l2-item-link">Medicare Insurance</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="insure/index.html#auto" class="nav-primary__l2-item-link">Auto Insurance</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="insure/index.html#homeowners" class="nav-primary__l2-item-link">Homeowners and Renters Insurance</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="insure/index.html#life" class="nav-primary__l2-item-link">Life Insurance</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="insure/index.html#accidental" class="nav-primary__l2-item-link">Accidental Death &amp; Dismemberment Insurance</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="insure/index.html#hospital" class="nav-primary__l2-item-link">Hospital Accident Insurance</a>
-                                                        </li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="nav-primary__flyout-feature">
-                                                    <span class="nav-primary__flyout-feature-title h4 u-block" id="feature-title-4">Let’s Navigate Medicare Together</span>
-                                                    <div class="nav-primary__flyout-feature-desc l-mb-1">
-                                                        <div class="rtf rtf--compact">
-                                                            <p>ultraprosavers offers dedicated Medicare Specialists to help you better prepare and understand your Medicare options. </p>
-                                                        </div>
-                                                    </div>
-                                                                <a href="insure.html" class="nav-primary__flyout-feature-cta" aria-labelledby="feature-title-4">Learn More</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                {{-- Learn & Plan nav item --}}
-                                {{-- <li class="nav-primary__l1-item">
-                                    <a href="learn-and-plan.html" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class='nav-primary__l1-item-link-text'>Learn &amp; Plan</span></a>
-
-                                    <ul class="nav-primary__flyout js-nav-primary-flyout">
-                                        <li class="l-contain u-cf">
-                                            <div class="nav-primary__flyout-nav">
-                                                <div class="nav-primary__flyout-nav-title h4 l-mb-1">Learn &amp; Plan – Financial Education</div>
-                                                <ul class="nav-primary__l2">
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="tax-checklist-5-things-to-remember.html" class="nav-primary__l2-item-link">Tax Checklist: 5 Things to Remember</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="how-to-save-for-summer-vacation.html" class="nav-primary__l2-item-link">How to Start Saving for Summer Vacation</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="simple-ways-to-manage-a-checking-account.html" class="nav-primary__l2-item-link">Simple Ways to Manage a Checking Account</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="the-impact-of-rising-rates-and-inflation-on-your-business.html" class="nav-primary__l2-item-link">The Impact of Rising Rates and Inflation on Your Business</a>
-                                                        </li>
-                                                       
-                                                </ul>
-                                            </div>
-
-                                            <div class="nav-primary__flyout-feature">
-                                                    <span class="nav-primary__flyout-feature-title h4 u-block" id="feature-title-5">Looking For Ways to Grow Your Nest Egg?</span>
-                                                    <div class="nav-primary__flyout-feature-desc l-mb-1">
-                                                        <div class="rtf rtf--compact">
-                                                            <p>When it comes to saving wisely and investing for your future, ultraprosavers has plenty of great options to help you reach your goals. </p>
-                                                        </div>
-                                                    </div>
-                                                                <a href="bank.html" class="nav-primary__flyout-feature-cta" aria-labelledby="feature-title-5">Learn More</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li> --}}
-                                {{-- Payments nav item --}}
-                                {{-- <li class="nav-primary__l1-item">
-                                    <a href="payments.html" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class='nav-primary__l1-item-link-text'>Payments</span></a>
-
-                                    <ul class="nav-primary__flyout js-nav-primary-flyout">
-                                        <li class="l-contain u-cf">
-                                            <div class="nav-primary__flyout-nav">
-                                                <div class="nav-primary__flyout-nav-title h4 l-mb-1">Payments</div>
-                                                <ul class="nav-primary__l2">
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="payments/index.html#auto" class="nav-primary__l2-item-link js-header-login-toggle" data-open="header-login">Auto Loan Customer Center</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="payments/index.html#one" class="nav-primary__l2-item-link">One Time Payments</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="payments/index.html#two" class="nav-primary__l2-item-link">Pay by Mail</a>
-                                                        </li>
-                                                        <li class="nav-primary__l2-item">
-                                                            <a href="payments/index.html#three" class="nav-primary__l2-item-link">Pay at Branch</a>
-                                                        </li>
-                                                </ul>
-                                            </div>
-
-                                            <div class="nav-primary__flyout-feature">
-                                                    <span class="nav-primary__flyout-feature-title h4 u-block" id="feature-title-6">Real-Time Account Alerts</span>
-                                                    <div class="nav-primary__flyout-feature-desc l-mb-1">
-                                                        <div class="rtf rtf--compact">
-                                                            <p>Manage your loan and stay current on statements, payments, and more with personalized alerts and reminders.</p>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="nav-primary__flyout-feature-cta js-header-login-toggle" data-open="header-login" aria-labelledby="feature-title-6">Login Now</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li> --}}
+                                <a href="{{ url('/') }}" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class="nav-primary__l1-item-link-text">Home</span></a>
+                            </li>
+                            <li class="nav-primary__l1-item">
+                                <a href="{{ url('personal') }}" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class="nav-primary__l1-item-link-text">Personal</span></a>
+                            </li>
+                            <li class="nav-primary__l1-item">
+                                <a href="{{ url('business') }}" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class="nav-primary__l1-item-link-text">Business</span></a>
+                            </li>
+                            <li class="nav-primary__l1-item">
+                                <a href="{{ url('cards') }}" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class="nav-primary__l1-item-link-text">Cards</span></a>
+                            </li>
+                            <li class="nav-primary__l1-item">
+                                <a href="{{ url('loans') }}" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class="nav-primary__l1-item-link-text">Loans</span></a>
+                            </li>
+                            <li class="nav-primary__l1-item">
+                                <a href="{{ url('about') }}" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class="nav-primary__l1-item-link-text">About</span></a>
+                            </li>
+                            <li class="nav-primary__l1-item">
+                                <a href="{{ url('contact') }}" class="nav-primary__l1-item-link nav-primary__l1-item-link--bank"><span class="nav-primary__l1-item-link-text">Contact</span></a>
+                            </li>
                         </ul>
                 </nav>
 

@@ -43,6 +43,7 @@ Route::get('/personal', fn () => view('home.personal'));
 Route::get('/business', fn () => view('home.business'));
 
 Route::get('/credit-card', fn () => view('home.credit-card'));
+Route::get('/cards', fn () => view('home.cards'));
 Route::get('/loans', fn () => view('home.loans'));
 Route::get('/commercial-real', fn () => view('home.commercial-real'));
 

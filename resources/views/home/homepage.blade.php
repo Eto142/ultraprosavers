@@ -84,10 +84,10 @@
                             <div class="ups-hero__content">
                                 <span class="ups-hero__eyebrow" id="heroEyebrow">Welcome to Ultraprosavers</span>
                                 <h1 class="ups-hero__title" id="heroTitle">Banking Built for <em>Your Future</em></h1>
-                                <p class="ups-hero__subtitle" id="heroSubtitle">We believe people come first. Experience genuinely different banking â€” face to face, over the phone, online, or on our app.</p>
+                                <p class="ups-hero__subtitle" id="heroSubtitle">We believe people come first. Experience genuinely different banking  face to face, over the phone, online, or on our app.</p>
                                 <div class="ups-hero__btns">
                                     <a href="#" class="ups-hero__btn ups-hero__btn--primary js-header-login-toggle" data-open="header-register">Open an Account</a>
-                                    <a href="certificates" class="ups-hero__btn ups-hero__btn--outline">Explore Rates</a>
+                                    <a href="#" class="ups-hero__btn ups-hero__btn--outline js-header-login-toggle" data-open="header-login">Login</a>
                                 </div>
                             </div>
                         </div>
@@ -885,14 +885,14 @@
                                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
                                 </div>
                                 <div class="ups-why__card-title">Instant Accounts</div>
-                                <p class="ups-why__card-text">Open a checking or savings account in minutes â€” no paperwork, no branch visit required. Banking when and where you need it.</p>
+                                <p class="ups-why__card-text">Open a checking or savings account in minutes  no paperwork, no branch visit required. Banking when and where you need it.</p>
                             </div>
                             <div class="ups-why__card">
                                 <div class="ups-why__icon">
                                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                                 </div>
                                 <div class="ups-why__card-title">People-First Service</div>
-                                <p class="ups-why__card-text">Dedicated member advisors available in-branch, by phone, and online â€” real people providing real support every day.</p>
+                                <p class="ups-why__card-text">Dedicated member advisors available in-branch, by phone, and online  real people providing real support every day.</p>
                             </div>
                         </div>
                     </div>
