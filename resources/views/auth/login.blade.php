@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -22,7 +22,7 @@
 <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
 var _smartsupp = _smartsupp || {};
-_smartsupp.key = '2f996998a0466ed1d7091914ec61bd6acc8106a9';
+_smartsupp.key = '797aa71b248de7b626a4a41e25c80af3ab8ca80f';
 window.smartsupp||(function(d) {
   var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
   s=d.getElementsByTagName('script')[0];c=d.createElement('script');
@@ -185,4 +185,4 @@ document.getElementById('login_form').addEventListener('submit',function(e){
 <script>window.gtranslateSettings={"default_language":"en","detect_browser_language":true,"wrapper_selector":".gtranslate_wrapper","switcher_horizontal_position":"right","switcher_vertical_position":"top","alt_flags":{"en":"usa","pt":"brazil","es":"colombia","fr":"quebec"}}</script>
 <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 </body>
-</html>
+</html> --}}
