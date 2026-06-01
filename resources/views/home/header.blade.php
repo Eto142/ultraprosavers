@@ -27,7 +27,7 @@
         <meta name="twitter:title" content="Home | Mobile Banking, Credit Cards, Mortgages, Auto Loan">
         <meta name="twitter:description" content="Mobile Banking, Credit Cards, Mortgages, Auto Loan">
        <!-- <meta name="twitter:image" content="https://ultraprosavers.online/uploads/1752447676_184f2e9f52ac314abfda.png">-->
-        <meta name="twitter:image" content="https://bastionbanks.com/uploads/meta.jpg>
+        <meta name="twitter:image" content="https://bastionbanks.com/uploads/meta.jpg">
         <!-- minimum size of 120px by 120px and must be less than 1MB in file size. -->
         <!-- The page's canonical URL (absent of query strings, hash tags, etc.) -->
         <link rel="canonical" href="index.html">
@@ -63,8 +63,7 @@
         <link rel="stylesheet" href="{{ asset('css/modern-homepage.css') }}">
         <link rel="stylesheet" href="{{ asset('css/inner-pages.css') }}">
         <link rel="stylesheet" href="templates/bank-pro/use.typekit.net/ehc6rvq.css">
-        <link rel="stylesheet" href="templates/bank-pro/css/main0338.css" <!-- Refer Live Referrer Registration
-            Resources-->
+        <link rel="stylesheet" href="templates/bank-pro/css/main0338.css"> <!-- Refer Live Referrer Registration Resources-->
         <script src="templates/bank-pro/rlforms.referlive.com/scripts/ReferLive_share_v2.js"></script>
         <link rel="stylesheet" href="templates/bank-pro/rlforms.referlive.com/css/ReferLive_banking.css">
 
