@@ -36,9 +36,10 @@ href="{{asset('https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.mi
 <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js')}}"></script>
 
 <!-- Smartsupp Live Chat script -->
+<!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
 var _smartsupp = _smartsupp || {};
-_smartsupp.key = 'c64f59534aad7d761ba1557faf3bc8c5acc77b3d';
+_smartsupp.key = '797aa71b248de7b626a4a41e25c80af3ab8ca80f';
 window.smartsupp||(function(d) {
   var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
   s=d.getElementsByTagName('script')[0];c=d.createElement('script');
@@ -46,7 +47,8 @@ window.smartsupp||(function(d) {
   c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
 })(document);
 </script>
-<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+<noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
+
 
 <style>
     /* Custom Toastr Styles */
