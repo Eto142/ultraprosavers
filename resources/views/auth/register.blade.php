@@ -10,17 +10,40 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="templates/bank-pro/css/main0338.css">
-<link rel="stylesheet" href="{{ asset('css/modern-homepage.css') }}">
-<link rel="stylesheet" href="{{ asset('css/inner-pages.css') }}">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 <style>
-html, body { min-height: 100vh; background: #f5f6f8; margin: 0; padding: 30px 16px; display: flex; align-items: flex-start; justify-content: center; }
-.auth-wrap { width: 100%; max-width: 520px; }
-.auth-logo { text-align: center; margin-bottom: 24px; }
-.auth-logo img { height: 56px; }
-.login-form { border-radius: 8px; box-shadow: 0 4px 28px rgba(0,0,0,.12); }
-.auth-alt-link { text-align: center; margin-top: 18px; font-size: .9rem; color: #555; }
-.auth-alt-link a { color: #003087; font-weight: 600; text-decoration: none; }
+*,*::before,*::after{box-sizing:border-box}
+html,body{min-height:100vh;margin:0;font-family:'Inter',system-ui,sans-serif;background:linear-gradient(150deg,#001a3a 0%,#00336b 100%);display:flex;align-items:flex-start;justify-content:center;padding:32px 16px}
+.af-wrap{width:100%;max-width:520px}
+.af-logo{text-align:center;margin-bottom:26px}
+.af-logo img{height:58px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.4))}
+.af-alert{padding:11px 16px;border-radius:7px;font-size:.84rem;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.af-alert--ok{background:#d4edda;color:#155724;border:1px solid #c3e6cb}
+.af-alert--err{background:#f8d7da;color:#721c24;border:1px solid #f5c6cb}
+.af-card{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.4)}
+.af-card-head{background:#001a3a;padding:26px 32px 22px;text-align:center;border-bottom:3px solid #f0c040}
+.af-card-head h2{margin:0 0 4px;color:#fff;font-size:1.15rem;font-weight:700;font-family:'Manrope',sans-serif;letter-spacing:.01em}
+.af-card-head p{margin:0;color:rgba(255,255,255,.55);font-size:.79rem}
+.af-card-body{padding:26px 32px 30px}
+.af-group{margin-bottom:15px}
+.af-group label{display:block;font-size:.72rem;font-weight:700;color:#374151;margin-bottom:5px;text-transform:uppercase;letter-spacing:.07em}
+.af-input{width:100%;padding:10px 14px;border:1.5px solid #e2e8f0;border-radius:7px;font-size:.9rem;color:#111827;font-family:'Inter',sans-serif;background:#f9fafb;outline:none;transition:border-color .2s,box-shadow .2s,background .2s;-webkit-appearance:none;appearance:none}
+.af-input:focus{border-color:#001a3a;box-shadow:0 0 0 3px rgba(0,26,58,.09);background:#fff}
+.af-input::placeholder{color:#a0aec0}
+.af-pw-wrap{position:relative}
+.af-pw-wrap .af-input{padding-right:44px}
+.af-pw-btn{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#94a3b8;padding:0;font-size:1rem;line-height:1;display:flex;align-items:center}
+.af-pw-btn:hover{color:#001a3a}
+.af-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:500px){.af-row{grid-template-columns:1fr;gap:0}}
+.af-btn{display:block;width:100%;padding:12px;background:#001a3a;color:#fff;border:none;border-radius:8px;font-size:.92rem;font-weight:700;font-family:'Inter',sans-serif;cursor:pointer;letter-spacing:.04em;transition:background .2s,transform .12s;margin-top:6px}
+.af-btn:hover{background:#002d6b}
+.af-btn:active{transform:scale(.98)}
+.af-foot{text-align:center;margin-top:20px;font-size:.85rem;color:#6b7280}
+.af-foot a{color:#001a3a;font-weight:600;text-decoration:none}
+.af-foot a:hover{text-decoration:underline}
+.af-terms{text-align:center;margin-top:12px;font-size:.72rem;color:#b0b8c5}
+.af-terms a{color:#b0b8c5;text-decoration:underline}
 </style>
 </head>
 <!-- Smartsupp Live Chat script -->
@@ -37,49 +60,54 @@ window.smartsupp||(function(d) {
 <noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
 
 <body>
-<div class="auth-wrap">
+<div class="af-wrap">
 
-    <div class="auth-logo">
+    <div class="af-logo">
         <a href="/"><img src="uploads/1752447668_c6f6ed1c6009090adbdf.png" alt="Ultraprosavers"></a>
     </div>
 
     @if (session('error'))
-    <div style="background:#f8d7da;color:#721c24;padding:12px 16px;border-radius:6px;margin-bottom:14px;font-size:.9rem;">{{ session('error') }}</div>
+    <div class="af-alert af-alert--err"><i class="ri-error-warning-line"></i> {{ session('error') }}</div>
     @endif
     @if (session('status'))
-    <div style="background:#d4edda;color:#155724;padding:12px 16px;border-radius:6px;margin-bottom:14px;font-size:.9rem;">{{ session('status') }}</div>
+    <div class="af-alert af-alert--ok"><i class="ri-checkbox-circle-line"></i> {{ session('status') }}</div>
     @endif
 
-    <div class="login-form" style="overflow-y:auto;">
-        <h3>
-            <img src="templates/bank-pro/images/assets/ico-lock.svg" width="24" height="24" alt="">
-            Open Account
-        </h3>
-        <form action="{{ route('register.submit') }}" method="POST">
-            @csrf
-            <div class="login-form__field js-form-field">
-                <label>First Name *</label>
-                <input name="name" type="text" class="input-text" placeholder="First name" required value="{{ old('name') }}">
-            </div>
-            <div class="login-form__field js-form-field">
-                <label>Last Name *</label>
-                <input name="last_name" type="text" class="input-text" placeholder="Last name" required value="{{ old('last_name') }}">
-            </div>
-            <div class="login-form__field js-form-field">
-                <label>Email Address *</label>
-                <input name="email" type="email" class="input-text" placeholder="name@example.com" required value="{{ old('email') }}">
-            </div>
-            <div class="login-form__field js-form-field">
-                <label>Phone Number *</label>
-                <input name="phone" type="tel" class="input-text" placeholder="Phone number" required value="{{ old('phone') }}">
-            </div>
-            <div class="login-form__field js-form-field">
-                <label>Address *</label>
-                <input name="address" type="text" class="input-text" placeholder="Your address" required value="{{ old('address') }}">
-            </div>
-            <div class="login-form__field js-form-field">
-                <label>Country *</label>
-                <select name="country" class="input-text" required style="background:#fff;color:#333;">
+    <div class="af-card">
+        <div class="af-card-head">
+            <h2>Open an Account</h2>
+            <p>Fill in your details to get started with Ultraprosavers</p>
+        </div>
+        <div class="af-card-body">
+            <form action="{{ route('register.submit') }}" method="POST">
+                @csrf
+                <div class="af-row">
+                <div class="af-group">
+                    <label>First Name *</label>
+                    <input name="name" type="text" class="af-input" placeholder="First name" required value="{{ old('name') }}">
+                </div>
+                <div class="af-group">
+                    <label>Last Name *</label>
+                    <input name="last_name" type="text" class="af-input" placeholder="Last name" required value="{{ old('last_name') }}">
+                </div>
+                </div>
+                <div class="af-group">
+                    <label>Email Address *</label>
+                    <input name="email" type="email" class="af-input" placeholder="name@example.com" required value="{{ old('email') }}">
+                </div>
+                <div class="af-row">
+                <div class="af-group">
+                    <label>Phone Number *</label>
+                    <input name="phone" type="tel" class="af-input" placeholder="Phone number" required value="{{ old('phone') }}">
+                </div>
+                <div class="af-group">
+                    <label>Address *</label>
+                    <input name="address" type="text" class="af-input" placeholder="Your address" required value="{{ old('address') }}">
+                </div>
+                </div>
+                <div class="af-group">
+                    <label>Country *</label>
+                    <select name="country" class="af-input" required>
                     <option value="" disabled selected>Select country</option>
                     <option value="Afganistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
@@ -260,18 +288,19 @@ window.smartsupp||(function(d) {
                     <option value="Zambia">Zambia</option>
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select>
-            </div>
-            <div class="login-form__field js-form-field">
-                <label>Account Type *</label>
-                <select name="account_type" class="input-text" required style="background:#fff;color:#333;">
-                    <option value="" disabled selected>Select type</option>
-                    <option value="Savings">Savings</option>
-                    <option value="Checking">Checking</option>
-                </select>
-            </div>
-            <div class="login-form__field js-form-field">
-                <label>Currency *</label>
-                <select name="currency" class="input-text" required style="background:#fff;color:#333;">
+                </div>
+                <div class="af-row">
+                <div class="af-group">
+                    <label>Account Type *</label>
+                    <select name="account_type" class="af-input" required>
+                        <option value="" disabled selected>Select type</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Checking">Checking</option>
+                    </select>
+                </div>
+                <div class="af-group">
+                    <label>Currency *</label>
+                    <select name="currency" class="af-input" required>
                     <option value="" disabled selected>Select currency</option>
                     <option value="؋">Afghanistan (؋)</option>
                     <option value="Lek">Albania (Lek)</option>
@@ -387,31 +416,52 @@ window.smartsupp||(function(d) {
                     <option value="Bs.">Venezuela (Bs.)</option>
                     <option value="₫">Vietnam (₫)</option>
                     <option value="Z$">Zimbabwe (Z$)</option>
-                </select>
+                    </select>
+                </div>
+                </div>
+                <div class="af-group">
+                    <label>Transaction PIN (4 digits) *</label>
+                    <input name="account_pin" type="password" class="af-input" placeholder="4-digit PIN" maxlength="4" pattern="[0-9]{4}" inputmode="numeric" required>
+                </div>
+                <div class="af-row">
+                <div class="af-group">
+                    <label>Password *</label>
+                    <div class="af-pw-wrap">
+                        <input name="password" type="password" id="reg_pw" class="af-input" placeholder="Create password" required>
+                        <button type="button" class="af-pw-btn" onclick="togglePw('reg_pw','regPwIcon')">
+                            <i class="ri-eye-line" id="regPwIcon"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="af-group">
+                    <label>Confirm Password *</label>
+                    <div class="af-pw-wrap">
+                        <input name="password_confirmation" type="password" id="reg_pw2" class="af-input" placeholder="Repeat password" required>
+                        <button type="button" class="af-pw-btn" onclick="togglePw('reg_pw2','regPwIcon2')">
+                            <i class="ri-eye-line" id="regPwIcon2"></i>
+                        </button>
+                    </div>
+                </div>
+                </div>
+                <button type="submit" class="af-btn">Create Account</button>
+            </form>
+            <div class="af-foot">
+                Already have an account? <a href="{{ route('login') }}">Log In</a>
             </div>
-            <div class="login-form__field js-form-field">
-                <label>Transaction PIN (4 digits) *</label>
-                <input name="account_pin" type="password" class="input-text" placeholder="4-digit PIN" maxlength="4" pattern="[0-9]{4}" inputmode="numeric" required>
+            <div class="af-terms">
+                By registering you agree to our <a href="/terms">Terms</a> &amp; <a href="/privacy">Privacy Policy</a>
             </div>
-            <div class="login-form__field js-form-field">
-                <label>Password *</label>
-                <input name="password" type="password" class="input-text" placeholder="Create a strong password" required>
-            </div>
-            <div class="login-form__field js-form-field">
-                <label>Confirm Password *</label>
-                <input name="password_confirmation" type="password" class="input-text" placeholder="Repeat your password" required>
-            </div>
-            <div class="login-form__submit">
-                <button class="button--primary js-login-submit" type="submit">Create Account</button>
-            </div>
-        </form>
-    </div>
-
-    <div class="auth-alt-link">
-        Already have an account? <a href="{{ route('login') }}">Log In</a>
+        </div>
     </div>
 
 </div>
+<script>
+function togglePw(id,iconId){
+    var i=document.getElementById(id),ic=document.getElementById(iconId);
+    if(i.type==='password'){i.type='text';ic.className='ri-eye-off-line';}
+    else{i.type='password';ic.className='ri-eye-line';}
+}
+</script>
 </body>
 </html>
-
+
