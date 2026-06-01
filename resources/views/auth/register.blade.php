@@ -46,6 +46,7 @@ html,body{min-height:100vh;margin:0;font-family:'Inter',system-ui,sans-serif;bac
 .af-terms a{color:#b0b8c5;text-decoration:underline}
 </style>
 </head>
+<body>
 <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
 var _smartsupp = _smartsupp || {};
@@ -58,8 +59,6 @@ window.smartsupp||(function(d) {
 })(document);
 </script>
 <noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
-
-<body>
 <div class="af-wrap">
 
     <div class="af-logo">
