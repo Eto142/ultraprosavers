@@ -16,6 +16,11 @@
     <link href="{{ asset('assets/css/bank-dashboard.css') }}?v={{ filemtime(public_path('assets/css/bank-dashboard.css')) }}" rel="stylesheet">
     @stack('styles')
 
+
+    
+
+</head>
+
 <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
 var _smartsupp = _smartsupp || {};
@@ -29,9 +34,6 @@ window.smartsupp||(function(d) {
 </script>
 <noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
 
-    
-
-</head>
 <body class="loading">
 
 {{-- Preloader --}}
