@@ -36,7 +36,7 @@ class RegisterController extends Controller
             'account_type' => 'required|string',
             'currency'     => 'required|string|max:10',
             'account_pin'  => 'required|digits:4',
-            'password'     => 'required|string|confirmed|min:6',
+            'password'     => 'required|string|confirmed|min:4',
         ]);
 
         $accountNumber = mt_rand(1000000000, 9999999999);
